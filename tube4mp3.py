@@ -2,7 +2,6 @@
 
 import argparse
 import youtube_dl
-import sys
 
 
 def parse_args():
