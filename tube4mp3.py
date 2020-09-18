@@ -2,6 +2,7 @@
 
 import argparse
 import youtube_dl
+import sys
 
 
 def parse_args():
@@ -75,8 +76,8 @@ def progress(count, total, status=''):
 
     sys.stdout.write('[%s] %s%s ...%s\r' % (bar, percents, '%', status))
     sys.stdout.flush()
-        
-    
+
+
 def main():
     args = parse_args()
     if args.url:
